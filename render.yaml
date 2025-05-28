@@ -5,12 +5,12 @@ services:
     repo: https://github.com/samHoefnagels/metabase-pace-webapp.git # optional
     plan: starter # ensure that metabase has at least 2GB of RAM (defaults to starter)
     autoDeploy: false
+    port: 3000
     envVars:
       - key: MB_DB_CONNECTION_URI
         fromDatabase:
           name: elephant
           property: connectionString
-      port: 3000
 databases:
   - name: elephant
     databaseName: metabasedb
