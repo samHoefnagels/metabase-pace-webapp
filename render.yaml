@@ -2,7 +2,7 @@ services:
   - type: web
     name: metabase
     env: docker
-    repo: https://github.com/samHoefnagels/metabase.git # optional
+    repo: https://github.com/samHoefnagels/metabase-pace-webapp.git # optional
     plan: starter # ensure that metabase has at least 2GB of RAM (defaults to starter)
     autoDeploy: false
     envVars:
